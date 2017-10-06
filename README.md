@@ -49,6 +49,20 @@ Once a title is chosen a user will be asked to give the title a score from 1-10.
 ```
 Once the user has supplied a list of game titles they have played previously. Their results will be fed into the dataset. After that, their entry is saved and the dataset will be turned into a sparse matrix. I will then use the review scores as cordinates for a nearest neighbors regressor which will find reviewers who have played the same or similar game titles in the dataset. Recommendations will be pulled from the games that other reviewers have played but the user has not.
 
+```python
+
+# I put the pivotsparse in NearestNeighbors and checked the for the closest neighbors around user_id (watevs).
+
+X = pivotsparse
+nbrs = NearestNeighbors(n_neighbors=7).fit(X) #6
+distances, indices = nbrs.kneighbors(pivotsparse[nameIndex]) #We put latest users 'nameIndex' in the sparse index
+
+
+# The most similar users in the dataframe
+print distances
+print "-"*20
+print indices
+```
 
 For more information on this project please visit my blog:
 https://keithstrmiska.com/
