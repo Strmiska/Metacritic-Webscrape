@@ -63,10 +63,12 @@ print distances
 print "-"*20
 print indices
 ```
+```
 [[  0.          18.          18.08314132  18.27566688  18.52025918
    18.70828693  18.70828693]]
 --------------------
 [[6169 3485 2153 4188 2574 5268 4801]]
+```
 
 The numbers at the top represent the distance of similarity between the nearest reviewers with selections closets to the user input. The numbers below are index references for those reviewrs
 
