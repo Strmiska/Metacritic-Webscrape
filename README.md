@@ -63,6 +63,51 @@ print distances
 print "-"*20
 print indices
 ```
+[[  0.          18.          18.08314132  18.27566688  18.52025918
+   18.70828693  18.70828693]]
+--------------------
+[[6169 3485 2153 4188 2574 5268 4801]]
+
+The numbers at the top represent the distance of similarity between the nearest reviewers with selections closets to the user input. The numbers below are index references for those reviewrs
+
+### The Final Results
+The results will be returned like so...
+
+```
+Hello Keith Strmiska.
+
+Here are your Reviews:
+------------------------------------------------------------
+title
+DOOM (PC)                              10.0
+Heroes of the Storm (PC)                9.0
+League of Legends (PC)                  8.0
+Dota 2 (PC)                             8.0
+Call of Duty: Modern Warfare 3 (PC)     7.0
+Name: 6169, dtype: float64
+
+************************************************************
+Here are a few recommendations from similar gamers!
+************************************************************
+
+Binary Domain (PC)
+Crysis 2 (PC)
+The Elder Scrolls V: Skyrim (PC)
+Call of Duty: Advanced Warfare (PC)
+Diablo III: Reaper of Souls (PC)
+Fallout 4 (PC)
+BioShock Infinite (PC)
+Grand Theft Auto IV (PC)
+Battlefield 3 (PC)
+Rage (PC)
+Fallout 4 (PC)
+Hearts of Iron IV (PC)
+The Elder Scrolls V: Skyrim (PC)
+Deadfall Adventures (PC)
+Narcosis (PC)
+Thief (PC)
+```
+
 
 For more information on this project please visit my blog:
 https://keithstrmiska.com/
