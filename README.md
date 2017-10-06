@@ -21,7 +21,7 @@ while exit == False:
                 results.append(title) #gather up the possible results...
 ```
 
-Once a title is chosen a user will be asked to give the title a score from 1-10. When the user is more critical with their review score (Not slapping 10's and 0's on everything) the model will return more accurate results. The user will be asked to do this for each title they chose.
+Once a title is chosen a user will be asked to give the title a score from 1-10. When the user is more critical with their review score (Not slapping 10's and 0's on everything) the model will return more accurate results. The user will be asked to do this for each title they chose. The best results will be returned from listing around 10 titles of varying reviews (games that you love,like, and hate). 
 
 ```python
     # Get the user's score for the game
