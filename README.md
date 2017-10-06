@@ -1,8 +1,8 @@
 # Metacritic Webscrape & PC Title Recommender
 
-This is a PC game recommender system using python, beautiful soup, scikit-learn, and pandas. My current model runs on scraped data from Metacritic's website using user and critic reviews to suggest game titles based on the user's input. There are a few bugs, but I am currently working to work these out.
+This is a PC game recommender system using python, beautiful soup, scikit-learn, and pandas. My current model runs on scraped data from Metacritic's website using user and critic reviews to suggest game titles based on the user's input. There are a few bugs, but I am currently working to work these out. If you would like to test the model please run the Part IV of the recommender.
 
-## Example
+## How it Works...
 
 A user will be prompted to feed in at least 4 PC game titles before the model will continue...
 
@@ -47,8 +47,8 @@ Once a title is chosen a user will be asked to give the title a score from 1-10.
         else:
             loop = True
 ```
-Once the user has supplied a list of game titles they have played previously. Their results will be fed into the dataset. Once their entry is saved the dataset will be turned into a sparse matrix.
+Once the user has supplied a list of game titles they have played previously. Their results will be fed into the dataset. After that, their entry is saved and the dataset will be turned into a sparse matrix. I will then use the review scores as cordinates for a nearest neighbors regressor which will find reviewers who have played the same or similar game titles in the dataset. Recommendations will be pulled from the games that other reviewers have played but the user has not.
 
 
-For more information on this project please visit:
+For more information on this project please visit my blog:
 https://keithstrmiska.com/
